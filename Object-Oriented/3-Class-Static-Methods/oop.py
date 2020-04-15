@@ -25,6 +25,7 @@ class Employee:
     @classmethod
     def from_string(cls, emp_str):
         first, last, pay = emp_str.split('-')
+        # we can also use Employee(first, last, pay)
         return cls(first, last, pay)
 
     @staticmethod
